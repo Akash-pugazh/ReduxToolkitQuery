@@ -26,6 +26,8 @@ const counterSlice = createSlice({
   },
 });
 
+export const getValueAndSteps = (state) => state.counter;
+
 export const { incrementCount, decrementCount, incrementCountByAmount } =
   counterSlice.actions;
 

@@ -5,12 +5,14 @@ import {
   decrementCount,
   incrementCountByAmount,
 } from "../Features/Counter/CounterSlice";
+import { getValueAndSteps } from "../Features/Counter/CounterSlice";
+
 import "../Styles/Counter.css";
 
 const Counter = () => {
   const [amount, setAmount] = useState(0);
 
-  const { value, steps } = useSelector(state => state.counter);
+  const { value, steps } = useSelector(getValueAndSteps);
   const dispatch = useDispatch();
 
   const handleIncrement = () => {
