@@ -22,7 +22,8 @@ const Counter = () => {
   };
 
   const handleIncrementByAmount = () => {
-    if (amount <   0) return;
+    if (amount <= 0) return;
+    if (isNaN(amount)) return;
     dispatch(incrementCountByAmount(amount));
   };
 
