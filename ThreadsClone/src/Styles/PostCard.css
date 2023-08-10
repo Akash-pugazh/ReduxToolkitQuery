@@ -1,0 +1,17 @@
+.post-wrapper{
+  width: 22rem;
+  background: lightgrey;
+  border-radius: .2rem;
+  margin: .2rem 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: .5rem;
+  height: auto;
+}
+
+.post-title{
+  font-weight: 600;
+}
